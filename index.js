@@ -5,12 +5,12 @@ import cors from "cors";
 let data = [
     {
         id: 1,
-        name: "Robert Hellas",
+        name: "Jota es un genioo",
         number: "040-123456",
     },
     {
         id: 2,
-        name: "Ada Lovelace",
+        name: "La base de datos es local",
         number: "39-44-5323523",
     },
     {
