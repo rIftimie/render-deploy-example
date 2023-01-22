@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 let data = [
     {
@@ -23,8 +24,13 @@ let data = [
         number: "39-23-6423122",
     },
 ];
+
+// Initialize Express
 const app = express();
+
 app.use(bodyParser.json());
+app.use(cors());
+
 const port = 3000;
 
 // Build Static Web Application:
