@@ -1,4 +1,4 @@
-const baseurl = "http://localhost:3001/api/persons/";
+const baseurl = "https://example-nodejs-express.onrender.com/api/persons/";
 
 export async function getAll() {
     try {
