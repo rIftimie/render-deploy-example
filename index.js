@@ -1,6 +1,6 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
 
 let data = [
     {
@@ -28,8 +28,8 @@ let data = [
 // Initialize Express
 const app = express();
 
-app.use(bodyParser.json());
 app.use(cors());
+app.use(bodyParser.json());
 
 const port = 3000;
 
