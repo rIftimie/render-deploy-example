@@ -1,6 +1,6 @@
-import express from "express";
-import bodyParser from "body-parser";
-import cors from "cors";
+const cors = require("cors");
+const express = require("express");
+const bodyParser = require("body-parser");
 
 let data = [
     {
@@ -37,7 +37,7 @@ const port = 3000;
 app.use(express.static("build"));
 
 // GET: All Data
-app.get("/api/persons", (req, res) => {
+app.get("/api/persons", cors(), (req, res) => {
     res.json(data);
 });
 

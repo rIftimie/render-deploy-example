@@ -1,5 +1,5 @@
 {
-    "type": "module",
+    "type": "commonjs",
     "name": "phonebook",
     "version": "0.1.0",
     "private": true,
